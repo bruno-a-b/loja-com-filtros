@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Loja Wingbound</title>
+        <link rel="stylesheet" href="./src/css/style.css" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/img/placeholder_icon_round.png"/>
+    </head>
+
+    <body>
+        <header id="header">
+            <h1>Loja Wingbound</h1>
+
+            <section id="filtros">
+                <section id="limparFiltros">
+                    <label for="botaoLimparFiltros">Limpar Filtros</label>
+                    <input type="button" id="botaoLimparFiltros" value="Limpar Filtros"/>
+                </section>
+
+                <section id="filtroPreco">
+                    <label for="precoMinimo">Min. e Max. do Preço</label>
+                    <section id="divPreco">
+                        <input type="number" id="precoMinimo" placeholder="Preço mínimo"/>
+                        <input type="number" id="precoMaximo" placeholder="Preço máximo"/>
+                    </section>
+                </section>
+
+                <section id="filtroCategoria">
+                    <label for="categoriaSelecao">Filtrar por Categoria:</label>
+                    <select id="categoriaSelecao">
+                        <option value="Todas" selected>Todas</option>
+                    </select>
+                </section>
+
+                <section id="filtroOrigem">
+                    <label for="muralhaOrigem">Filtrar por Muralha de Origem:</label>
+                    <select id="muralhaOrigem">
+                        <option value="Todas" selected>Todas</option>
+                    </select>
+                </section>
+
+                <section id="filtroPesquisar">
+                    <label for="barraPesquisa">Pesquise um produto</label>
+                    <input type="text" id="barraPesquisa" placeholder="Pesquise o produto" />
+                </section>
+                
+            </section>
+        </header>
+
+        <main>
+            <section id="divCatalogo"></section>
+        </main>
+
+        <script type="module" src="./src/js/main.js"></script>
+    </body>
+</html>
